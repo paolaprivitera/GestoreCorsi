@@ -12,6 +12,7 @@ import it.polito.tdp.corsi.model.Corso;
 public class CorsoDAO {
 
 	public List<Corso> listAll() {
+		
 		String sql = "SELECT * FROM corso";
 		List<Corso> result = new LinkedList<Corso>();
 		

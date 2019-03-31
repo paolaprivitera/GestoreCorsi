@@ -1,13 +1,15 @@
 package it.polito.tdp.corsi.model;
 
+// Il nome della classe (Corso) deve essere uguale a quello della tabella
+// Una classe strutturata in questo modo si chiama Java Bean
+
 public class Corso {
-	private String codins;
+	private String codins; // VARCHAR
 	private int crediti;
 	private String nome;
 	private int pd;
 	
 	public Corso(String codins, int crediti, String nome, int pd) {
-		super();
 		this.codins = codins;
 		this.crediti = crediti;
 		this.nome = nome;
@@ -39,6 +41,7 @@ public class Corso {
 		this.pd = pd;
 	}
 
+	// Mi serve perche' devo stampare
 	@Override
 	public String toString() {
 		return "Corso [codins=" + codins + ", crediti=" + crediti + ", nome=" + nome + ", pd=" + pd + "]";

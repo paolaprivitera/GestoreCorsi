@@ -11,6 +11,9 @@ public class GestoreCorsi {
 	public List<Corso> getCorsiByPeriodo(int periodo) {
 		CorsoDAO dao = new CorsoDAO();
 		
+		// 1. Posso o farmi dare tutti i corsi e poi filtrarli internamente
+		// 2. oppure filtrarli direttamente con la query
+		
 		//Soluzione 1
 		/*List<Corso> corsi = dao.listAll();
 		List<Corso> result = new ArrayList<Corso>();
@@ -19,7 +22,10 @@ public class GestoreCorsi {
 			if(c.getPd() == periodo) {
 				result.add(c);
 			}
-		}*/
+		}
+		
+		return result;
+		*/
 		
 		//Soluzione 2
 		return dao.listCorsiByPD(periodo);

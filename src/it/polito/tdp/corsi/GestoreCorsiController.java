@@ -41,6 +41,12 @@ public class GestoreCorsiController {
     @FXML
     void doCalcolaStatCorsi(ActionEvent event) {
     	
+    	int periodo = Integer.parseInt(txtPeriodo.getText());
+    	
+    	model.getIscrittiCorsi(periodo);
+    	
+    	// txtResult.appendText(");
+    	
     }
 
     @FXML
